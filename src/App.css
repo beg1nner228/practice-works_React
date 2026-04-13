@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.addNewContactInput {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  outline: 1px solid #3d97e5;
+}
+
+.AddNewContactLabel {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.AddNewContactBtn {
+  background-color: #3d97e5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.phonebook_title {
+  text-align: center;
+  color: #3d97e5;
+}
+
+.phonebook-list {
+  list-style: none;
+  padding: 0;
+}
+
+.phonebook-list-item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  gap: 16px;
+  &:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+  }
+}
+
+.testBtn {
+  background-color: #3d97e5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
