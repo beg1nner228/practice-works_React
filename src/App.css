@@ -76,3 +76,7 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+.completed-task {
+  text-decoration: line-through;
+  color: #6c757d;
+}

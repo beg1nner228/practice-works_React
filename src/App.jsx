@@ -4,12 +4,14 @@ import Homework_7 from './Homework-7'
 import Homework_8 from './Homework-8'
 // import Homework_9 from './Homework-9'
 import Homework_10 from './Homework-10'
+import Homework_11 from './Homework_11'
 
 const HOMEWORK_PAGES = [
   { id: 'homework7', label: 'Homework 7' },
   { id: 'homework8', label: 'Homework 8' },
   { id: 'homework9', label: 'Homework 9' },
   { id: 'homework10', label: 'Homework 10' },
+  { id: 'homework11', label: 'Homework 11' },
 ]
 
 const pageBoxStyle = {
@@ -103,6 +105,7 @@ function App() {
           {page === 'homework7' && <Homework_7 />}
           {page === 'homework8' && <Homework_8 />}
           {page === 'homework10' && <Homework_10 />}
+          {page === 'homework11' && <Homework_11 />}
           {page === 'homework9' && (
             <div style={{ padding: '24px', color: '#334155' }}>
               <h2 style={{ marginTop: 0 }}>Homework 9</h2>
