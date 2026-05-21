@@ -5,6 +5,10 @@ import Homework_8 from './Homework-8'
 // import Homework_9 from './Homework-9'
 import Homework_10 from './Homework-10'
 import Homework_11 from './Homework_11'
+import Homework_12 from './Homework_12'
+import Homework_13 from './Homework_13'
+import Homework_14 from './Homework_14'
+import Homework_15 from './Homework_15'
 
 const HOMEWORK_PAGES = [
   { id: 'homework7', label: 'Homework 7' },
@@ -12,6 +16,10 @@ const HOMEWORK_PAGES = [
   { id: 'homework9', label: 'Homework 9' },
   { id: 'homework10', label: 'Homework 10' },
   { id: 'homework11', label: 'Homework 11' },
+  { id: 'homework12', label: 'Homework 12' },
+  { id: 'homework13', label: 'Homework 13' },
+  { id: 'homework14', label: 'Homework 14' },
+  { id: 'homework15', label: 'Homework 15' },
 ]
 
 const pageBoxStyle = {
@@ -106,12 +114,16 @@ function App() {
           {page === 'homework8' && <Homework_8 />}
           {page === 'homework10' && <Homework_10 />}
           {page === 'homework11' && <Homework_11 />}
-          {page === 'homework9' && (
+          {page === 'homework12' && <Homework_12 />}
+          {page === 'homework13' && <Homework_13 />}
+          {page === 'homework14' && <Homework_14 />}
+          {page === 'homework15' && <Homework_15 />}
+          {page === 'homework9' || page === 'homework12' || page === 'homework13' || page === 'homework15' ? (
             <div style={{ padding: '24px', color: '#334155' }}>
-              <h2 style={{ marginTop: 0 }}>Homework 9</h2>
-              <p>Здесь пока что нет содержимого, но кнопка уже готова к работе.</p>
+              <h2 style={{ marginTop: 0 }}>Homework {page.split('homework')[1]}</h2>
+              <p>There is no content here yet, but the button is already ready to use.</p>
             </div>
-          )}
+          ) : null}
         </div>
       </section>
     </main>
